@@ -5,7 +5,6 @@ disable=
       C0115,
       C0116,
       W0703,
-      C0709,
       E0015,
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
@@ -328,7 +327,7 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+min-public-methods=0
 
 
 [EXCEPTIONS]
