@@ -1,7 +1,6 @@
 from sqlalchemy.orm import mapped_column, Mapped, relationship
 from sqlalchemy import Integer, BIGINT, String, ForeignKey
 
-from src.models.sqlite.entities.pets import PetsTable
 from src.models.sqlite.settings.base import Base
 
 
