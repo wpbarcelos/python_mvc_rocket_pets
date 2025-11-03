@@ -9,7 +9,7 @@ class PetsRepository(PetsRepositoryInterface):
     def __init__(self, db_connection) -> None:
         self.__db_conection = db_connection
 
-    def list_pests(self) -> List:
+    def list_pets(self) -> List:
         with self.__db_conection as database:
             try:
                 pets = database.session.query(PetsTable).all()

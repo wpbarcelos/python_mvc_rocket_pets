@@ -12,7 +12,7 @@ db_connection_handler.connect()
 def test_list_pets():
     repository = PetsRepository(db_connection_handler)
 
-    pets = repository.list_pests()
+    pets = repository.list_pets()
     print()
     print(pets)
 
@@ -22,7 +22,7 @@ def test_delete_pet():
     name = "paco"
     repository = PetsRepository(db_connection_handler)
     repository.delete_pets(name)
-    pets = repository.list_pests()
+    pets = repository.list_pets()
     print()
     print(pets)
 
