@@ -1,8 +1,11 @@
 from typing import List
+
+from src.controllers.interfaces.pet_lister_controller import PetListerControllerInterface
 from src.models.sqlite.repositories.pets_repository import PetsRepositoryInterface
 from src.models.sqlite.entities.pets import PetsTable
 
-class PetListerController:
+
+class PetListerController(PetListerControllerInterface):
     def __init__(self, pet_repository: PetsRepositoryInterface) -> None:
         self.__pet_repository = pet_repository
 
