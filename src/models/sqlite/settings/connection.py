@@ -24,3 +24,5 @@ class DBConnectionHandler:
 
 
 db_connection_handler = DBConnectionHandler()
+
+db_connection_handler.connect()

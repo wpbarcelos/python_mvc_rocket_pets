@@ -2,3 +2,26 @@
 GET http://127.0.0.1:3000/pets
 
 
+#### DELETE a pest by name
+
+DELETE http://127.0.0.1:3000/pets/cao
+
+
+
+### CREATE PERSON
+
+POST http://127.0.0.1:3000/people
+Content-Type: application/json
+
+{
+  "first_name": "Wanderson",
+  "last_name": "Barcelos",
+  "age": 35,
+  "pet_id": 7
+}
+
+
+
+### FINDER A PERSON
+
+GET http://127.0.0.1:3000/people/2

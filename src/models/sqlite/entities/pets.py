@@ -1,6 +1,6 @@
+# pylint: disable=wrong-import-position
 from sqlalchemy.orm import mapped_column, Mapped, relationship
 from sqlalchemy import Integer, String
-
 from src.models.sqlite.settings.base import Base
 
 
@@ -12,8 +12,11 @@ class PetsTable(Base):
     type: Mapped[str] = mapped_column(String, nullable=False)
     people: Mapped[list["PeopleTable"]] = relationship(
         "PeopleTable",
-        back_populates="pet"
+        backref="pet"
     )
 
     def __repr__(self) -> str:
         return f"PetsTable(id={self.id}, name={self.name}, type={self.type})"
+
+
+from src.models.sqlite.entities.people import PeopleTable
